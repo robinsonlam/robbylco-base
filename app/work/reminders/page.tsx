@@ -5,7 +5,7 @@ export default function RemindersLanding() {
 
           {/* <MicroFrontEndLoader></MicroFrontEndLoader> */}
 
-          <p><strong>Reminders</strong> is a light-weight, (soon-to-be) feature-rich and streamlined way to make sure you don't forget anything, start typing and get suggestions based off your history.</p>
+          <p><strong>Reminders</strong> is a light-weight, (soon-to-be) feature-rich and streamlined way to make sure you don&apos;t forget anything, start typing and get suggestions based off your history.</p>
       </main>
     )
   }

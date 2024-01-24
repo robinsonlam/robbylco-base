@@ -3,7 +3,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-center px-12">
     
       <div className="heroContainer container font-sans text-center flex flex-col gap-3 sm:gap-4">
-        <p className="text-base sm:text-lg text-amber-400 leading-relaxed">Hi, I'm Rob - welcome to my space.</p>
+        <p className="text-base sm:text-lg text-amber-400 leading-relaxed">Hi, I&apos;m Rob - welcome to my space.</p>
 
         <h1 className="text-3xl sm:text-4xl text-amber-400 font-semibold leading-none">Full-Stack Software Engineer</h1>
         <h4 className="text-xs sm:text-sm font-light text-gray leading-relaxed">JS Stacks (React, Vue, Angular, Node) - AWS - MongoDB - CI/CD</h4>
