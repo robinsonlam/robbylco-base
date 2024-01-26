@@ -11,8 +11,7 @@ const remotes = isServer => {
   };
 };
 module.exports = {
-    distDir: 'build', // Defined build directory
-
+    output: "export",
     webpack(config, options) {
         // config.plugins.push(
         //     new NextFederationPlugin({
