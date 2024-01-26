@@ -13,7 +13,6 @@ export default function Home() {
         <div className="callToActions flex flex-row my-2 justify-center">
           <button className="border border-solid border-amber-500 bg-amber-500 hover:bg-amber-300 hover:border-amber-300 px-4 py-2 rounded-md text-white font-light mx-2 shadow-sm hover:shadow-md transition-all">Send me a message</button>
           <button className="border border-solid border-amber-500 bg-transparent hover:bg-amber-300 hover:border-amber-300 hover:text-white px-4 py-2 rounded-md text-amber-500 font-light mx-4 shadow-sm hover:shadow-md transition-all">My passion projects</button>
-          <button></button>
         </div>
       </div>
     </main>
