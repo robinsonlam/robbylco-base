@@ -1,19 +1,29 @@
 'use client'
 
 import { useState } from 'react';
+import { useRouter } from 'next/navigation'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCaretLeft } from '@fortawesome/free-solid-svg-icons'
 
 export default function ContactPage() {
   const [contactFormActive, setContactFormActive] = useState(false);
 
+  const router = useRouter()
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-center px-12 sm:px-24 md:px-36 lg:px-36 xl:px-64">
-    
+        <a onClick={() => router.back()} className="self-start text-sm text-amber-400 cursor-pointer p-0.5 hover:underline hover:text-amber-300 mb-8 transition">
+            <FontAwesomeIcon icon={faCaretLeft} size="xs" className="mr-1"/>
+            <span>
+                Go back
+            </span>
+        </a>
       { !contactFormActive && <div className="heroContainer container font-sans text-left flex flex-col gap-3 sm:gap-4">
         <h1 className="text-3xl sm:text-4xl text-amber-400 font-semibold -ml-1">Contact</h1>
 
-        <p className="text-xs sm:text-sm font-light text-gray leading-relaxed">Looking to start a fresh and exciting project or hire a skilled engineer? Email me at <a href="mailto:rob@robbyl.co">rob@robbyl.co</a> or shoot me a message below and let&apos;s have a chat!</p>
+        <p className="text-xs sm:text-sm font-light text-gray leading-relaxed">Looking to start a fresh and exciting project or hire a skilled engineer? Email me at <a href="mailto:rob@robbyl.co" className="text-sm text-amber-400 cursor-pointer p-0.5 hover:underline hover:text-amber-300 ">rob@robbyl.co</a> or shoot me a message below and let&apos;s have a chat!</p>
 
-        <p className="text-xs text-gray leading-relaxed mt-4 mb-2">Currently <strong>open</strong> to <strong>contract,</strong> <strong>freelance</strong> and <strong>full-time lead &amp; senior engineering</strong> opportunities</p>
+        <p className="text-xs text-gray leading-relaxed mt-4 mb-4">Currently <strong>open</strong> to <strong>contract,</strong> <strong>freelance</strong> and <strong>full-time lead &amp; senior engineering</strong> opportunities</p>
 
         <form action="" className="flex flex-col">
             <label className="flex flex-col mb-4">

@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import ContactModal from '../components/ContactModal';
+import Link from 'next/link'
 
 export default function Home() {
   const [contactFormActive, setContactFormActive] = useState(false);
@@ -18,7 +19,9 @@ export default function Home() {
         <p className="text-xs text-gray leading-relaxed">Currently <strong>open</strong> to <strong>contract,</strong> <strong>freelance</strong> and <strong>full-time lead &amp; senior engineering</strong> opportunities</p>
       
         <div className="callToActions flex flex-row my-2 justify-center">
-          <button className="border border-solid border-amber-500 bg-amber-500 hover:bg-amber-300 hover:border-amber-300 px-4 py-2 rounded-md text-white font-light mx-2 shadow-sm hover:shadow-md transition-all">Send me a message</button>
+          <Link href="/contact">
+            <button className="border border-solid border-amber-500 bg-amber-500 hover:bg-amber-300 hover:border-amber-300 px-4 py-2 rounded-md text-white font-light mx-2 shadow-sm hover:shadow-md transition-all">Send me a message</button>
+          </Link>
           <button className="border border-solid border-amber-500 bg-transparent hover:bg-amber-300 hover:border-amber-300 hover:text-white px-4 py-2 rounded-md text-amber-500 font-light mx-4 shadow-sm hover:shadow-md transition-all">My passion projects</button>
         </div>
 
@@ -27,7 +30,7 @@ export default function Home() {
       {/* Contact modal */}
       { contactFormActive && <ContactModal /> }
 
-      <button onClick={(e) => setContactFormActive(!contactFormActive)}>TOggle Form</button>
+      {/* <button onClick={(e) => setContactFormActive(!contactFormActive)}>TOggle Form</button> */}
     </main>
   )
 }
