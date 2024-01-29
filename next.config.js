@@ -12,6 +12,7 @@ const remotes = isServer => {
 };
 module.exports = {
     output: "export",
+    trailingSlash: true,
     webpack(config, options) {
         // config.plugins.push(
         //     new NextFederationPlugin({
