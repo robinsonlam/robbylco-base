@@ -24,7 +24,7 @@ export default function Home() {
             Send me a message
           </Link>
 
-          <button className="border border-solid border-amber-500 bg-transparent hover:bg-amber-300 hover:border-amber-300 hover:text-white px-4 py-2 rounded-md text-amber-500 font-light sm:mx-2 shadow-sm hover:shadow-md transition-all">My passion projects</button>
+          {/* <button className="border border-solid border-amber-500 bg-transparent hover:bg-amber-300 hover:border-amber-300 hover:text-white px-4 py-2 rounded-md text-amber-500 font-light sm:mx-2 shadow-sm hover:shadow-md transition-all">My passion projects</button> */}
         </div>
 
       </div> }
